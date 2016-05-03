@@ -1,9 +1,9 @@
 sap.ui.define([
-   "sap/ui/core/mvc/Controller"
-], function (Controller) {
+   "ui5/workshop/controller/BaseController"
+], function (BaseController) {
    "use strict";
 
-   return Controller.extend("ui5.workshop.controller.Home", {
+   return BaseController.extend("ui5.workshop.controller.Home", {
 
    });
 
