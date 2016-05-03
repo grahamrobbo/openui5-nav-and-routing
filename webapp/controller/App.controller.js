@@ -11,7 +11,7 @@ sap.ui.define([
 				var sHash = oEvent.getParameter("hash");
 				// do something here, i.e. send logging data to the backend for analysis
 				// telling what resource the user tried to access...
-				jQuery.sap.log.info("Sorry, but the hash '" + sHash + "' is invalid.", "The resource was not found.");
+				jQuery.sap.log.error("Sorry, but the hash '" + sHash + "' is invalid.", "The resource was not found.");
 			});
 		}
 
