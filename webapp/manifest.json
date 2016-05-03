@@ -73,6 +73,10 @@
                 "name": "employeeList",
                 "target": "employees"
             }, {
+                "pattern": "employees/overview",
+                "name": "employeeOverview",
+                "target": ["employeeOverviewTop", "employeeOverviewContent"]
+            }, {
                 "pattern": "employees/{employeeId}",
                 "name": "employee",
                 "target": "employee"
@@ -117,6 +121,25 @@
                     "viewPath": "ui5.workshop.view.employees",
                     "viewName": "ResumeNotes",
                     "controlId": "notesTab",
+                    "controlAggregation": "content"
+                },
+                "employeeOverview": {
+                    "viewPath": "ui5.workshop.view.employees.overview",
+                    "viewName": "EmployeeOverview",
+                    "viewLevel": 2
+                },
+                "employeeOverviewTop": {
+                    "parent": "employeeOverview",
+                    "viewPath": "ui5.workshop.view.employees.overview",
+                    "viewName": "EmployeeOverviewTop",
+                    "controlId": "employeeOverviewParent",
+                    "controlAggregation": "content"
+                },
+                "employeeOverviewContent": {
+                    "parent": "employeeOverview",
+                    "viewPath": "ui5.workshop.view.employees.overview",
+                    "viewName": "EmployeeOverviewContent",
+                    "controlId": "employeeOverviewParent",
                     "controlAggregation": "content"
                 }
             }
