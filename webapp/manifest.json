@@ -103,6 +103,21 @@
                     "viewName": "employees.Resume",
                     "viewLevel": 4,
                     "transition": "flip"
+                },
+                "resumeTabHobbies": {
+                    "parent": "employeeResume",
+                    "viewPath": "ui5.workshop.view.employees",
+                    "viewName": "ResumeHobbies",
+                    "viewId": "thisIsMyCustomIdToBeUsedForResumeHobbies",
+                    "controlId": "hobbiesTab",
+                    "controlAggregation": "content"
+                },
+                "resumeTabNotes": {
+                    "parent": "employeeResume",
+                    "viewPath": "ui5.workshop.view.employees",
+                    "viewName": "ResumeNotes",
+                    "controlId": "notesTab",
+                    "controlAggregation": "content"
                 }
             }
         }
